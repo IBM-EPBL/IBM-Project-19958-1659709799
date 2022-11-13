@@ -21,10 +21,6 @@ def information():
 def upload():
     return render_template('upload.html')
 
-# @app.route('/predict' ,methods=['POST','GET'])
-# def predict():
-#     return 'Hello World'
-
 
 @app.route('/predict', methods=['POST']) 
 def predict():
@@ -66,13 +62,6 @@ def predict():
         return result 
     return None
 
-
-# @app.route('/success', methods = ['POST'])  
-# def success():  
-#     if request.method == 'POST':  
-#         f = request.files['file']  
-#         f.save(f.filename)  
-#         return render_template("success.html", name = f.filename)  
 
 
 
